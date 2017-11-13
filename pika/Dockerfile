@@ -1,4 +1,3 @@
-
 FROM ubuntu:latest
 MAINTAINER cuixin <steven.cuixin@gmail.com>
 
@@ -19,5 +18,4 @@ RUN apt-get -y update && \
     sed -i 's/\.\/dump\//\/data\/dump/g' /etc/pika.conf
 
 EXPOSE 9221
-VOLUME ["/data/log", "/data/dump" "/data/db"]
-CMD ["/bin/pika", "-c", "/etc/pika.conf"]
+VOLUME ["/data/"]
