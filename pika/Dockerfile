@@ -19,3 +19,4 @@ RUN apt-get -y update && \
 
 EXPOSE 9221
 VOLUME ["/data/"]
+CMD ["pika", "-c", "/etc/pika.conf"]
